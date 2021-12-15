@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="5dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewLeagueName"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="LeagueName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCountry"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewLeagueName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLeagueName"
+        tools:text="Country" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewStartDate"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewCountry"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountry"
+        tools:text="Start date: 2018-05-22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
